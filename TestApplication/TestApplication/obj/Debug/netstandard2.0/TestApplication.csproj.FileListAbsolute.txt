@@ -1,0 +1,14 @@
+C:\Users\Jason Gardner\source\repos\TestApplication\TestApplication\TestApplication\bin\Debug\netstandard2.0\TestApplication.deps.json
+C:\Users\Jason Gardner\source\repos\TestApplication\TestApplication\TestApplication\bin\Debug\netstandard2.0\TestApplication.dll
+C:\Users\Jason Gardner\source\repos\TestApplication\TestApplication\TestApplication\bin\Debug\netstandard2.0\ref\TestApplication.dll
+C:\Users\Jason Gardner\source\repos\TestApplication\TestApplication\TestApplication\bin\Debug\netstandard2.0\TestApplication.pdb
+C:\Users\Jason Gardner\source\repos\TestApplication\TestApplication\TestApplication\obj\Debug\netstandard2.0\TestApplication.csprojAssemblyReference.cache
+C:\Users\Jason Gardner\source\repos\TestApplication\TestApplication\TestApplication\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Jason Gardner\source\repos\TestApplication\TestApplication\TestApplication\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Jason Gardner\source\repos\TestApplication\TestApplication\TestApplication\obj\Debug\netstandard2.0\TestApplication.csproj.CoreCompileInputs.cache
+C:\Users\Jason Gardner\source\repos\TestApplication\TestApplication\TestApplication\obj\Debug\netstandard2.0\TestApplication.AssemblyInfoInputs.cache
+C:\Users\Jason Gardner\source\repos\TestApplication\TestApplication\TestApplication\obj\Debug\netstandard2.0\TestApplication.AssemblyInfo.cs
+C:\Users\Jason Gardner\source\repos\TestApplication\TestApplication\TestApplication\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Jason Gardner\source\repos\TestApplication\TestApplication\TestApplication\obj\Debug\netstandard2.0\TestApplication.dll
+C:\Users\Jason Gardner\source\repos\TestApplication\TestApplication\TestApplication\obj\Debug\netstandard2.0\ref\TestApplication.dll
+C:\Users\Jason Gardner\source\repos\TestApplication\TestApplication\TestApplication\obj\Debug\netstandard2.0\TestApplication.pdb
