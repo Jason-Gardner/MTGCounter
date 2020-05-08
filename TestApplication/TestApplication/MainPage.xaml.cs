@@ -22,9 +22,10 @@ namespace TestApplication
             commander.Text = startcomm.ToString();
         }
 
-        int count = 40;
+        int count = 990;
         int startinf = 0;
         int startcomm = 0;
+        bool fontswitched = false;
 
         void Start_New(object sender, System.EventArgs e)
         {
@@ -35,17 +36,28 @@ namespace TestApplication
             life.Text = count.ToString();
             infect.Text = startinf.ToString();
             commander.Text = startcomm.ToString();
+            commName.Text = "";
         }
 
         void lifeMinus_Clicked(object sender, System.EventArgs e)
         {
             count--;
+            if (count < 1000 && fontswitched == true)
+            {
+                life.FontSize += 10;
+                fontswitched = false;
+            }
             life.Text = count.ToString();
         }
 
         void lifePlus_Clicked(object sender, System.EventArgs e)
         {
             count++;
+            if (count > 999 && fontswitched == false)
+            {
+                life.FontSize -= 10;
+                fontswitched = true;
+            }
             life.Text = count.ToString();
         }
 

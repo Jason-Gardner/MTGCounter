@@ -6,7 +6,7 @@
              mc:Ignorable="d"
              x:Class="TestApplication.MainPage">
 
-    <Grid>
+    <Grid BackgroundColor="DimGray">
         <Grid.RowDefinitions>
             <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
@@ -26,11 +26,12 @@
         </Grid.ColumnDefinitions>
         <!-- Place new controls here -->
         <Label Text="Welcome to Plainswalker!" FontSize="Medium" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"  
-           BackgroundColor="Blue" TextColor="Black"
+           BackgroundColor="Gray" TextColor="Black"
            Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" Grid.RowSpan="1" />
-        <Button Text="Start New Game" Grid.Row="1" Grid.Column="1" Clicked="Start_New"/>
 
-        <Entry HorizontalOptions="Center" MaxLength="25" Placeholder="Enter Your Commander Here" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" ReturnType="Done" x:Name="commName"/>
+        <Entry HorizontalOptions="Center" TextColor="White" MaxLength="25" Placeholder="Enter Your Commander Here" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" ReturnType="Done" x:Name="commName"/>
+
+        <Button Text="Start New Game" Grid.Row="2" Grid.Column="1" Clicked="Start_New"/>
 
         <Button Text="-" CornerRadius="100" FontSize="Large" Clicked="lifeMinus_Clicked" Grid.Row="4" Grid.Column="0" Grid.RowSpan="2" />
         <Label Text="life" HorizontalTextAlignment="Center" FontSize="Medium"  Grid.Row="4" Grid.Column="1"/>
