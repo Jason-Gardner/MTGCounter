@@ -13,6 +13,11 @@ namespace TestApplication
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
+        int count = 40;
+        int startinf = 0;
+        int startcomm = 0;
+        bool fontswitched = false;
+
         public MainPage()
         {
             InitializeComponent();
@@ -22,11 +27,6 @@ namespace TestApplication
             commander.Text = startcomm.ToString();
         }
 
-        int count = 990;
-        int startinf = 0;
-        int startcomm = 0;
-        bool fontswitched = false;
-
         void Start_New(object sender, System.EventArgs e)
         {
             count = 40;
@@ -35,8 +35,6 @@ namespace TestApplication
 
             life.Text = count.ToString();
             infect.Text = startinf.ToString();
-            commander.Text = startcomm.ToString();
-            commName.Text = "";
         }
 
         void lifeMinus_Clicked(object sender, System.EventArgs e)
@@ -46,6 +44,11 @@ namespace TestApplication
             {
                 life.FontSize += 10;
                 fontswitched = false;
+            }
+            if (count < -99 && fontswitched == false)
+            {
+                life.FontSize -= 10;
+                fontswitched = true;
             }
             life.Text = count.ToString();
         }
@@ -58,13 +61,21 @@ namespace TestApplication
                 life.FontSize -= 10;
                 fontswitched = true;
             }
+            if (count > -100 && fontswitched == true)
+            {
+                life.FontSize += 10;
+                fontswitched = false;
+            }
             life.Text = count.ToString();
         }
 
         void infectMinus_Clicked(object sender, System.EventArgs e)
         {
-            startinf--;
-            infect.Text = startinf.ToString();
+            if (startinf > 0)
+            {
+                startinf--;
+                infect.Text = startinf.ToString();
+            }
         }
 
         void infectPlus_Clicked(object sender, System.EventArgs e)
@@ -75,8 +86,11 @@ namespace TestApplication
 
         void commMinus_Clicked(object sender, System.EventArgs e)
         {
-            startcomm--;
-            commander.Text = startcomm.ToString();
+            if (startcomm > 0)
+            {
+                startcomm--;
+                commander.Text = startcomm.ToString();
+            }
         }
 
         void commPlus_Clicked(object sender, System.EventArgs e)

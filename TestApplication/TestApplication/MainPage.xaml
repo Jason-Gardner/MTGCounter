@@ -6,7 +6,7 @@
              mc:Ignorable="d"
              x:Class="TestApplication.MainPage">
 
-    <Grid BackgroundColor="DimGray">
+    <Grid BackgroundColor="Black">
         <Grid.RowDefinitions>
             <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
@@ -24,29 +24,25 @@
             <ColumnDefinition Width="*"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Plainswalker!" FontSize="Medium" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"  
-           BackgroundColor="Gray" TextColor="Black"
-           Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" Grid.RowSpan="1" />
 
-        <Entry HorizontalOptions="Center" TextColor="White" MaxLength="25" Placeholder="Enter Your Commander Here" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" ReturnType="Done" x:Name="commName"/>
+        <Image Source="saygologo.jpg" Grid.Column="1" Grid.Row="0"></Image>
 
-        <Button Text="Start New Game" Grid.Row="2" Grid.Column="1" Clicked="Start_New"/>
+        <Button BackgroundColor="Black" TextColor="WhiteSmoke" Text="Start New Game" Grid.Row="1" Grid.Column="1" Clicked="Start_New"/>
 
-        <Button Text="-" CornerRadius="100" FontSize="Large" Clicked="lifeMinus_Clicked" Grid.Row="4" Grid.Column="0" Grid.RowSpan="2" />
-        <Label Text="life" HorizontalTextAlignment="Center" FontSize="Medium"  Grid.Row="4" Grid.Column="1"/>
-        <Label Text="40" Grid.Row="4" Grid.Column="1" x:Name="life" Grid.RowSpan="2" FontSize="60" VerticalOptions="Center" HorizontalOptions="Center"/>
-        <Button Text="+" CornerRadius="100"  FontSize="Large" Clicked="lifePlus_Clicked" Grid.Row="4" Grid.Column="2" Grid.RowSpan="2"/>
+        <Button Text="-" BackgroundColor="Black" TextColor="Red" CornerRadius="100" FontSize="Large" Clicked="lifeMinus_Clicked" Grid.Row="4" Grid.Column="0" Grid.RowSpan="2" />
+        <Label Text="Life" TextColor="WhiteSmoke"  HorizontalTextAlignment="Center" FontSize="Medium"  Grid.Row="4" Grid.Column="1"/>
+        <Label Text="40" TextColor="WhiteSmoke" Grid.Row="4" Grid.Column="1" x:Name="life" Grid.RowSpan="2" FontSize="60" VerticalOptions="Center" HorizontalOptions="Center"/>
+        <Button Text="+" BackgroundColor="Black" TextColor="Green" CornerRadius="100"  FontSize="Large" Clicked="lifePlus_Clicked" Grid.Row="4" Grid.Column="2" Grid.RowSpan="2"/>
 
-        <Button Text="-" CornerRadius="100"  FontSize="Large" Clicked="infectMinus_Clicked" Grid.Row="6" Grid.Column="0" Grid.RowSpan="2"/>
-        <Label Text="infect" HorizontalTextAlignment="Center" FontSize="Medium" Grid.Row="6" Grid.Column="1"/>
-        <Label Text="0" Grid.Row="6" Grid.Column="1" x:Name="infect" Grid.RowSpan="2" FontSize="60" VerticalOptions="Center" HorizontalOptions="Center"/>
-        <Button Text="+" CornerRadius="100"  FontSize="Large" Clicked="infectPlus_Clicked" Grid.Row="6" Grid.Column="2" Grid.RowSpan="2"/>
-        
-        <Button Text="-" CornerRadius="100" FontSize="Large" Clicked="commMinus_Clicked" Grid.Row="8" Grid.Column="0" Grid.RowSpan="2"/>
-        <Label Text="commander tax" HorizontalTextAlignment="Center" FontSize="Medium"  Grid.Row="8" Grid.Column="1"/>
-        <Label Text="0" Grid.Row="8" Grid.Column="1" x:Name="commander" Grid.RowSpan="2" FontSize="60" VerticalOptions="Center" HorizontalOptions="Center"/>
-        <Button Text="+" CornerRadius="100"  FontSize="Large" Clicked="commPlus_Clicked" Grid.Row="8" Grid.Column="2" Grid.RowSpan="2"/>
+        <Button Text="-" BackgroundColor="Black" TextColor="Red" CornerRadius="100"  FontSize="Large" Clicked="infectMinus_Clicked" Grid.Row="6" Grid.Column="0" Grid.RowSpan="2"/>
+        <Label Text="Counter #1" TextColor="WhiteSmoke"  HorizontalTextAlignment="Center" FontSize="Medium" Grid.Row="6" Grid.Column="1"/>
+        <Label Text="0" TextColor="WhiteSmoke"  Grid.Row="6" Grid.Column="1" x:Name="infect" Grid.RowSpan="2" FontSize="60" VerticalOptions="Center" HorizontalOptions="Center"/>
+        <Button Text="+" BackgroundColor="Black" TextColor="Green" CornerRadius="100"  FontSize="Large" Clicked="infectPlus_Clicked" Grid.Row="6" Grid.Column="2" Grid.RowSpan="2"/>
+
+        <Button Text="-" BackgroundColor="Black" TextColor="Red" CornerRadius="100" FontSize="Large" Clicked="commMinus_Clicked" Grid.Row="8" Grid.Column="0" Grid.RowSpan="2"/>
+        <Label Text="Counter #2" TextColor="WhiteSmoke"  HorizontalTextAlignment="Center" FontSize="Medium"  Grid.Row="8" Grid.Column="1"/>
+        <Label Text="0" TextColor="WhiteSmoke"  Grid.Row="8" Grid.Column="1" x:Name="commander" Grid.RowSpan="2" FontSize="60" VerticalOptions="Center" HorizontalOptions="Center"/>
+        <Button Text="+" BackgroundColor="Black" TextColor="Green" CornerRadius="100"  FontSize="Large" Clicked="commPlus_Clicked" Grid.Row="8" Grid.Column="2" Grid.RowSpan="2"/>
     </Grid>
 
 </ContentPage>
